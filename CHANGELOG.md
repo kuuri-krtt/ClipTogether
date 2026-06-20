@@ -15,15 +15,6 @@ ClipTogether 首个稳定版本。
 - Preserve images and links as rich clipboard content.
 - Optional plain-text URL formatting.
 - Success and failure notifications.
-- Automatic browser-language selection with eight languages:
-  - English
-  - Simplified Chinese
-  - Traditional Chinese
-  - Japanese
-  - Korean
-  - Spanish
-  - French
-  - German
 
 ### 主要内容
 
@@ -34,7 +25,6 @@ ClipTogether 首个稳定版本。
 - 以富文本形式保留图片和链接。
 - 可选择将网址改为纯文本格式。
 - 提供复制成功与失败通知。
-- 自动跟随浏览器语言，支持英语、简体中文、繁体中文、日语、韩语、西班牙语、法语和德语。
 
 ### Notes
 
