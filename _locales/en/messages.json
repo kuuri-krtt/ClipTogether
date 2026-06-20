@@ -1,6 +1,6 @@
 {
   "extensionName": { "message": "ClipTogether" },
-  "extensionDescription": { "message": "Copy images together with their source page or post link from websites, X/Twitter, and Weibo." },
+  "extensionDescription": { "message": "Copy images together with their source page or post link from websites and social platforms." },
   "copyImageMenu": { "message": "Copy image + source link" },
   "copyAllMenu": { "message": "Copy all post images + post link" },
   "popupDescription": { "message": "On any website, right-click an image to copy it with the current page link. X/Twitter and Weibo also support copying all images from a post." },
