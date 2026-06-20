@@ -8,6 +8,16 @@ X/Twitter and Weibo are currently supported with post-aware features. More socia
 
 目前已完成 X/Twitter 与微博的贴文级适配，后续将继续支持更多社交平台。
 
+## Why ClipTogether? / 为什么制作 ClipTogether？
+
+Images are often separated from their creators and original context when they are shared or saved. ClipTogether makes it easier to keep a verifiable source trail by copying the image together with its source page or post link. This helps preserve information that can be used to identify and credit the image's creator when sharing or documenting it.
+
+图片在分享或记录过程中，很容易与作者及原始语境分离。ClipTogether 会将图片与其来源网页或贴文链接一同复制，尽量保留可追溯、可核实的出处线索，方便在分享和记录时查明并标注图片作者与来源。
+
+The extension preserves source links; whether a page clearly identifies the original creator still depends on the source itself.
+
+本扩展负责保留来源链接；页面是否明确标示原作者，仍取决于来源页面本身。
+
 ## Features / 功能
 
 - Copy a right-clicked image together with the current page URL on ordinary webpages.
