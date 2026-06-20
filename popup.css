@@ -1,16 +1,16 @@
 :root {
   color-scheme: light dark;
-  --bg: #f7f9fc;
-  --surface: rgba(255, 255, 255, 0.9);
-  --surface-hover: #fff;
-  --text: #182230;
-  --muted: #667085;
-  --border: rgba(24, 34, 48, 0.1);
-  --accent: #1688f8;
-  --accent-strong: #0875dc;
-  --track: #cdd5df;
-  --success: #087a55;
-  --shadow: 0 12px 32px rgba(22, 34, 51, 0.1);
+  --bg: #f5f5f7;
+  --surface: rgba(255, 255, 255, 0.78);
+  --surface-hover: rgba(255, 255, 255, 0.96);
+  --text: #1d1d1f;
+  --muted: #6e6e73;
+  --border: rgba(0, 0, 0, 0.1);
+  --accent: #0a84ff;
+  --accent-strong: #0067c0;
+  --track: #d1d1d6;
+  --success: #16845b;
+  --shadow: 0 4px 16px rgba(0, 0, 0, 0.07);
 }
 
 * {
@@ -21,14 +21,12 @@ body {
   width: 340px;
   margin: 0;
   color: var(--text);
-  background:
-    radial-gradient(circle at 100% 0, rgba(22, 136, 248, 0.12), transparent 42%),
-    var(--bg);
+  background: var(--bg);
   font: 14px/1.45 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
 main {
-  padding: 18px;
+  padding: 16px;
 }
 
 header {
@@ -38,10 +36,10 @@ header {
 }
 
 header img {
-  width: 42px;
-  height: 42px;
-  border-radius: 11px;
-  box-shadow: 0 5px 14px rgba(14, 119, 221, 0.22);
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.12);
 }
 
 h1 {
@@ -53,15 +51,14 @@ h1 {
 
 .tagline {
   margin: 3px 0 0;
-  color: var(--accent-strong);
+  color: var(--muted);
   font-size: 11px;
-  font-weight: 650;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 0.01em;
 }
 
 .description {
-  margin: 16px 1px 14px;
+  margin: 15px 2px 13px;
   color: var(--muted);
   font-size: 12px;
   line-height: 1.55;
@@ -70,9 +67,10 @@ h1 {
 .settings {
   overflow: hidden;
   border: 1px solid var(--border);
-  border-radius: 14px;
+  border-radius: 12px;
   background: var(--surface);
   box-shadow: var(--shadow);
+  backdrop-filter: blur(18px) saturate(1.25);
 }
 
 label {
@@ -80,10 +78,10 @@ label {
   align-items: center;
   justify-content: space-between;
   gap: 16px;
-  min-height: 78px;
+  min-height: 76px;
   padding: 14px;
   cursor: pointer;
-  transition: background-color 150ms ease;
+  transition: background-color 120ms ease;
 }
 
 label:hover {
@@ -132,9 +130,10 @@ small {
 .switch-track {
   position: absolute;
   inset: 0;
+  border: 1px solid rgba(0, 0, 0, 0.05);
   border-radius: 999px;
   background: var(--track);
-  transition: background-color 170ms ease;
+  transition: background-color 150ms ease;
 }
 
 .switch-track::after {
@@ -145,9 +144,9 @@ small {
   height: 18px;
   border-radius: 50%;
   background: #fff;
-  box-shadow: 0 1px 4px rgba(16, 24, 40, 0.3);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.28);
   content: "";
-  transition: transform 170ms ease;
+  transition: transform 150ms ease;
 }
 
 .switch input:checked + .switch-track {
@@ -168,7 +167,7 @@ small {
   align-items: center;
   justify-content: space-between;
   min-height: 28px;
-  padding: 8px 2px 0;
+  padding: 8px 3px 0;
 }
 
 .version {
@@ -193,27 +192,25 @@ small {
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg: #10151d;
-    --surface: rgba(27, 34, 45, 0.92);
-    --surface-hover: #222b38;
-    --text: #edf3fb;
-    --muted: #9aa8b8;
-    --border: rgba(222, 234, 247, 0.11);
-    --accent: #3b9dff;
+    --bg: #202124;
+    --surface: rgba(48, 49, 52, 0.82);
+    --surface-hover: rgba(58, 59, 63, 0.96);
+    --text: #f5f5f7;
+    --muted: #a9aaae;
+    --border: rgba(255, 255, 255, 0.11);
+    --accent: #409cff;
     --accent-strong: #69b4ff;
-    --track: #4a5665;
-    --success: #4fd6a5;
-    --shadow: 0 14px 34px rgba(0, 0, 0, 0.3);
-  }
-
-  body {
-    background:
-      radial-gradient(circle at 100% 0, rgba(59, 157, 255, 0.16), transparent 44%),
-      var(--bg);
+    --track: #5b5c60;
+    --success: #55c99a;
+    --shadow: 0 5px 18px rgba(0, 0, 0, 0.24);
   }
 
   header img {
-    box-shadow: 0 5px 16px rgba(0, 0, 0, 0.35);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.32);
+  }
+
+  .switch-track {
+    border-color: rgba(255, 255, 255, 0.06);
   }
 }
 
