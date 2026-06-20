@@ -1,14 +1,18 @@
 # ClipTogether
 
-Copy images together with their source link from ordinary webpages, X/Twitter, and Weibo.
+Copy images together with their source link across the web, with site-specific support for social platforms.
 
-在一般网页、X/Twitter 和微博中，将图片与来源链接一起复制到剪贴板。
+在网页中将图片与来源链接一起复制到剪贴板，并针对不同社交平台持续扩展专用适配。
+
+X/Twitter and Weibo are currently supported with post-aware features. More social platforms are planned.
+
+目前已完成 X/Twitter 与微博的贴文级适配，后续将继续支持更多社交平台。
 
 ## Features / 功能
 
 - Copy a right-clicked image together with the current page URL on ordinary webpages.
-- Copy a single image or video thumbnail together with its post URL on X/Twitter and Weibo.
-- Copy all media belonging to one post by right-clicking a non-image area of the post.
+- Use site-specific adapters to identify media and canonical post URLs on supported social platforms.
+- Copy all media belonging to one post by right-clicking a non-image area where supported.
 - Handle X media viewers, quoted posts, carousels, and media-library views.
 - Handle Weibo feeds, search results, albums, viewers, hidden images, and video thumbnails.
 - Preserve rich clipboard content for editors that accept images and links.
@@ -19,8 +23,8 @@ Copy images together with their source link from ordinary webpages, X/Twitter, a
 ---
 
 - 在一般网页中右击图片，同时复制图片与当前网页地址。
-- 在 X/Twitter 和微博中，复制单张图片或视频缩略图及其对应贴文链接。
-- 在贴文的非图片区域右击，可复制属于该贴文的全部媒体与贴文链接。
+- 通过社交平台专用适配识别媒体及其正式贴文链接。
+- 在已适配平台的贴文非图片区域右击，可复制属于该贴文的全部媒体与贴文链接。
 - 支持 X 的媒体查看器、引用贴文、轮播图和媒体库视图。
 - 支持微博信息流、搜索结果、相册、图片查看器、隐藏图片及视频缩略图。
 - 默认保留富文本剪贴板内容，可直接粘贴到支持图片与链接的编辑器。
@@ -54,7 +58,21 @@ Right-click an image and select **Copy image + source link**. The clipboard will
 
 右击图片并选择“复制图片 + 来源链接”，剪贴板中将同时包含图片与当前网页地址。
 
-### X/Twitter and Weibo / X/Twitter 与微博
+### Supported social platforms / 已适配社交平台
+
+Current platform adapters:
+
+- X/Twitter
+- Weibo
+
+More social platforms will be added over time.
+
+当前已适配：
+
+- X/Twitter
+- 微博
+
+后续将继续增加其他社交平台。
 
 - Right-click an image or video thumbnail to copy that media item and its post URL.
 - Right-click another area of a supported post to copy all media from that post and its post URL.
