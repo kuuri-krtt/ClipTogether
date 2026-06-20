@@ -9,7 +9,7 @@ ClipTogether 首个稳定版本。
 ### Highlights
 
 - Copy images and their source page URL from ordinary webpages.
-- Specialized post-aware copying for X/Twitter and Weibo.
+- Introduced an extensible social-platform adaptation model, initially supporting X/Twitter and Weibo.
 - Copy either one media item or all media belonging to a supported post.
 - Support image carousels, media viewers, quoted posts, albums, search pages, hidden images, and video thumbnails.
 - Preserve images and links as rich clipboard content.
@@ -28,7 +28,7 @@ ClipTogether 首个稳定版本。
 ### 主要内容
 
 - 在一般网页中复制图片与当前网页地址。
-- 针对 X/Twitter 与微博提供贴文识别和专用复制逻辑。
+- 建立可持续扩展的社交平台适配机制，首批支持 X/Twitter 与微博。
 - 可复制单个媒体，也可复制属于同一贴文的全部媒体。
 - 支持轮播图、媒体查看器、引用贴文、相册、搜索页面、隐藏图片和视频缩略图。
 - 以富文本形式保留图片和链接。
