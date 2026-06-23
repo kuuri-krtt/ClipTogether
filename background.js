@@ -32,13 +32,23 @@ chrome.contextMenus.onClicked.addListener((info, tab) => {
   if (!tab?.id) return;
   if (![COPY_IMAGE_MENU_ID, COPY_POST_MENU_ID].includes(info.menuItemId)) return;
 
-  chrome.tabs.sendMessage(tab.id, {
+  const message = {
     type: 'XISC_COPY_CONTEXT',
     context: info.menuItemId === COPY_IMAGE_MENU_ID ? 'image' : 'post',
     srcUrl: info.srcUrl
-  }).catch(error => {
+  };
+  const options = Number.isInteger(info.frameId) ? { frameId: info.frameId } : undefined;
+
+  try {
+    const response = chrome.tabs.sendMessage(tab.id, message, options);
+    if (response?.catch) {
+      response.catch(error => {
+        console.warn('[ClipTogether] Context-menu copy failed.', error);
+      });
+    }
+  } catch (error) {
     console.warn('[ClipTogether] Context-menu copy failed.', error);
-  });
+  }
 });
 
 chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {

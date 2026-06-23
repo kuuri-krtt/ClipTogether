@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.0.1 - 2026-06-24
+
+### Fixed
+
+- Fixed context-menu copy commands failing silently when the right-click target is inside a frame.
+- Show a failure notification when a post context cannot be identified.
+
 ## 1.0.0 - 2026-06-21
 
 ClipTogether's first stable release.
