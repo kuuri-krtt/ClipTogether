@@ -954,6 +954,7 @@
       && !findXMediaDialog(target)
       && !findWeiboMediaViewer(target)
     )) {
+      showCopyToast(t('copyFailed'), 'error');
       sendResponse({ ok: false, error: 'Post context not found.' });
       return false;
     }
